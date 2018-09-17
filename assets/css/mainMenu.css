@@ -2,6 +2,13 @@
     background: #000000 url(/images/barhigh.jpg) 100% 100% no-repeat;
 }
 
+a {
+    cursor: pointer;
+}
+.serviceMenuItem {
+    cursor: pointer;
+}
+
   #header{
     height:52px;
     width: 80vw;
@@ -85,13 +92,12 @@ ul {
       position: relative;
       height: 49px;
       white-space:nowrap;
-      overflow: hidden;
-
   }
 
 
   .dropdown{
-    display: flex;
+    display: none;
+    
     flex-direction: column;
     position: absolute;
     top: 49px;
@@ -100,8 +106,8 @@ ul {
     box-shadow: 3px 0 #888888;
   }
 
-  #services:hover > #servicesDropDown {
-      display: flex;
+  #mainMenu > li:hover > .dropdown {
+    display: flex;
   }
 
 .dropdown > li {
@@ -113,21 +119,19 @@ ul {
     line-height: 30px;
 }
 
-.dropdown > li:hover {
-}
-
-
-.dropdownElement > a{
-  margin: 0 10px 0 25px;
-}
-
 .dropdownElement > a:hover{
-    font-size: 15px;
-    border-bottom: none;
     font-weight: bold;
     border-bottom: 3px solid #ffb42a66;
     font-family: Josefinsemibold;
-  }
+}
+
+.dropdownElement > a{
+  font-size: 15px;
+  border-bottom: none;
+  font-family: Josefin;
+  margin: 0 10px 0 25px;
+  display: block;
+}
 
 .fadeOut{
     animation: dropdownfadeout 0.5s ease-out;
