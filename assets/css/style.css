@@ -1,0 +1,238 @@
+@font-face {
+  font-family: Josefin;
+  src: url(../Fonts/JosefinSansStd-Light.otf)
+}
+
+@font-face {
+  font-family: Josefinsemibold;
+  src: url(../Fonts/JosefinSans-SemiBold.ttf)
+}
+
+@font-face {
+  font-family: Josefinsanslight;
+  src: url(../Fonts/JosefinSans-Light.ttf)
+}
+
+@font-face {
+  font-family: Flamalight;
+  src: url(../Fonts/Flama-Light.otf)
+}
+
+
+
+html{
+  height: 100%;
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+body{
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0;
+}
+
+.spacer {
+    flex-grow: 3;
+}
+
+
+#header {
+  /*position: fixed;*/
+  width: 100%;
+  max-width: 1320px;
+}
+
+#footer {
+  width: 100%;
+  max-width: 1320px;
+}
+
+#content{
+  margin-top: 74px;
+  margin-bottom: 48px;
+  flex-grow: 1;
+  width: 80vw;
+  max-width: 1680px;
+  min-width: 800px;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+ position: relative;
+}
+
+
+#architect {
+  display: block;
+  width: 24vw;
+  height: auto;
+  /*box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.12);*/
+  margin: 0 auto;
+}
+
+
+
+#subTitle.text{
+  font-size: 25px;
+  margin-top: 2px;
+  text-align: center;
+  font-family: 'Brandon Grotesque','brandon-grotesque','Helvetica','sans-serif';
+}
+
+
+header{
+  border-bottom: 6px solid rgba(4, 249, 171, 0.1);
+  position: fixed;
+}
+
+
+#introductionIMG{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 0 0;
+}
+
+
+
+#introduction{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  /*background-color: white;*/
+  top: 0px;
+  font-family: 'Josefin';
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(19, 19, 19);
+  text-align: justify;
+  width: 70vw;
+  max-width: 1500px;
+  z-index: -1;
+}
+
+#introside{
+  position: relative;
+  margin-left: 3vw;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  /*background-color: white;*/
+  top: 0px;
+  font-family: 'Josefin';
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(19, 19, 19);
+  text-align: justify;
+  z-index: -1;
+}
+
+#mainIMG {
+  max-width:100%;
+  max-height:100%;
+  }
+
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -2;
+  }
+  #bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    z-index: -2;
+  }
+
+#nagykep{
+  width: 80vw;
+  max-width:1680px;
+  min-width:600px;
+  max-height:100%;
+}
+
+
+
+
+#starterLogo {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  transition: all 500ms ease;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#starterLogoBackground {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 50;
+  transition: all 500ms ease;
+}
+
+
+#starterLogoContainer{
+  margin-left: 500px;/*calc(100%-150px);*/
+  position: absolute;
+  top: 25vh;
+  width: 300px;
+  height: 300px;
+  transition: all 500ms ease;
+  z-index:999;
+}
+
+#starterLogoBackground.small #starterLogoContainer {
+
+  top: calc(0vh - 19px);
+  margin-left: calc(10vw + 36px);
+  width: 78px;
+  height: 72px;
+}
+
+#starterLogoContainer.topLeft {
+
+  /*top: calc(0vh - 19px);*/
+  left: 36px;
+  top: -93px;
+  width: 78px;
+  height: 72px;
+}
+
+#starterLogo.rotate{
+  transform: rotate(22deg);
+  animation: logoFade 0.2s ease-in-out;
+}
+
+#starterLogoBackground.fade {
+  background-color: rgb(255, 255, 255, 0);
+}
+
+@-webkit-keyframes logoFade {
+  0% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.noDisplay{
+  display: none;
+}
