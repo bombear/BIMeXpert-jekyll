@@ -5,9 +5,8 @@
   padding-top: 20px;
   text-align: justify;
   width: 75vw;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 7.5vw;
+  padding: 20px;
 }
 
 .article_header{
@@ -18,21 +17,13 @@
 
 .article > p{
   text-indent: 0;
-  max-width: 750px;
-  width: 50vw;
-  padding: 10px 50px 10px 50px;
-  margin:auto;
-  margin:auto;
-  min-width: 700px;
 }
 
 .article > .definition{
-  padding: 10px 50px 10px 50px;
   font-style: italic;
-  width: 42vw;
   text-indent: -1em;
   border: 1px solid lightgrey;
-  max-width: 600px;
+  padding: 5px 25px;
 }
 
 #definitionTitle{
@@ -45,13 +36,25 @@
 
 
 #whatisbim {
-  position: absolute;
-  left: 0;
+  display: flex;
+  flex-direction: column;
   opacity: 0.08;
-  padding-left: 5vw;
-  width: 10vw;
-  max-width: 150px;
-  min-width: 30px;
-  height: auto;
-  padding-top: 50px;
+  margin-top: 68px;
+  margin-left: 1vw;
+  width: 11.5vw;
+  background: url(/images/whatisbimimage.png) no-repeat transparent center top;
+  background-size: 95% auto;
 }
+
+#BIMarticle {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+}
+
