@@ -1,91 +1,23 @@
 ---
-title: Csapat
+title: BIMeXpert | Csapat
 layout: default
+lang: hu
 ---
 
 <div id=ourTeam>
-  <div id=photoSlider>
-
-    <!-- previous button -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade" id="firstSlide">
-      <div class="numbertext">1 / 3</div>
-      <img src="/images/photoSlider/1.jpg">
-      <div class="text">Caption Text</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="/images/photoSlider/2.jpg">
-      <div class="text">Caption Two</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="/images/photoSlider/3.jpg">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="/images/photoSlider/4.jpg">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <!-- Next buttons -->
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-
-  <!-- The dots/circles -->
-  <div id="dots" style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
-
   <div id="allMembers">
     <h2>Munkatársak</h2>
-
     <div class=memberRow id=topRow>
       <div class=spacer></div>
-      <div class=member>
-        <img class="IDIMG" src="/images/team/tamas.png" alt="OT">
-        <h5>Orosz Tamás</h5>
-        <p>Ügyezető, tulajdonos</br>&#9743: +36706029845 </br> &#128387: orosztamas@bimexpert.hu</p>
-      </div>
-      <div class="member">
-        <img class="IDIMG" src="/images/team/peter.png" alt="OP">
-        <h5>Orosz Péter</h5>
-        <p>Ügyezető, tulajdonos</br>&#9743: +36202640321 </br> &#128387: oroszpeter@bimexpert.hu</p>
-      </div>
+      {% for member in site.data.team_1 %}
+        {% include member_block.html %}
+      {% endfor %}
       <div class=spacer></div>
     </div>
     <div class=memberRow id=secondRow>
-      <div class="member">
-        <img class="IDIMG" src="/images/team/flora.png" alt="OF">
-        <h5>Orosz Flóra</h5>
-        <p>Irodavezető</br>&#9743: +36306468318</br> &#128387: oroszflora@bimexpert.hu</p>
-      </div>
-      <div class="member">
-        <img class="IDIMG" src="/images/team/gergo.png" alt="DG">
-        <h5>Dudás Gergely</h5>
-        <p>Épületgépész mérnök</br>&#9743: +36307292157</br> &#128387: dudasgergely@bimexpert.hu</p>
-      </div>
-      <div class="member">
-        <img class="IDIMG" src="/images/team/gergo.png" alt="MM">
-        <h5>Magyar Máté</h5>
-        <p>Épületgépész mérnök</br>&#9743: +36302930552</br> &#128387: magyarmate@bimexpert.hu</p>
-      </div>
-      <div class="member">
-        <img class="IDIMG" src="/images/team/gergo.png" alt="DG">
-        <h5>Orbán Péter</h5>
-        <p>Villamosmérnök</br>&#9743: +36301111111</br> &#128387: orbanpeter@bimexpert.hu</p>
-      </div>
+      {% for member in site.data.team_2 %}
+        {% include member_block.html %}
+      {% endfor %}    
     </div>
   </div>
 </div>
-<script src="/assets/js/slideShow.js"></script>

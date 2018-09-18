@@ -2,9 +2,10 @@
   font-family: Flamalight;
   font-size: 16px;
   padding-bottom: 20px;
+  padding-top: 20px;
   text-align: justify;
   width: 75vw;
-  max-width: 1600x;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,13 +18,21 @@
 
 .article > p{
   text-indent: 0;
+  max-width: 750px;
+  width: 50vw;
+  padding: 10px 50px 10px 50px;
+  margin:auto;
+  margin:auto;
+  min-width: 700px;
 }
 
 .article > .definition{
   padding: 10px 50px 10px 50px;
   font-style: italic;
+  width: 42vw;
   text-indent: -1em;
   border: 1px solid lightgrey;
+  max-width: 600px;
 }
 
 #definitionTitle{
@@ -32,4 +41,17 @@
 
 .bold{
   font-weight: bold;
+}
+
+
+#whatisbim {
+  position: absolute;
+  left: 0;
+  opacity: 0.08;
+  padding-left: 5vw;
+  width: 10vw;
+  max-width: 150px;
+  min-width: 30px;
+  height: auto;
+  padding-top: 50px;
 }

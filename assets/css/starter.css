@@ -73,6 +73,18 @@
   max-width: 1500px;
   z-index: -1;
   flex-grow: 1;
+  font-family: Josefin;
+}
+.sectionTextTitle{
+  font-family: Josefinsemibold;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  max-width: 1500px;
+  z-index: -1;
+  flex-grow: 1;
+  margin-bottom: 10px;
 }
 
 ul.listy {
@@ -111,6 +123,7 @@ ul.sublisty {
   padding: 0.5em;
   height: 3vh;
   align-items: center;
+  opacity: 0.4;
 }
 .index-wrapper .index-main {
   display: flex;
@@ -140,6 +153,11 @@ ul.sublisty {
   background-position: center;
   background-size: cover;
   transition: all .5s ease-in-out;
+  opacity: 0.6;
+}
+
+.serviceMenuItem:hover, .serviceMenuItem:active{
+  opacity: 1;
 }
 
 .index-wrapper .index-main .index-square .serviceMenuItem {
@@ -150,7 +168,7 @@ ul.sublisty {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
+  text-decoration: none;
 }
 .index-wrapper .index-main .index-square .serviceMenuItem:hover {
   transform: scale(1.1);

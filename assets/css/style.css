@@ -160,7 +160,7 @@ header{
 #nagykep{
   width: 80vw;
   max-width:1680px;
-  min-width:600px;
+  min-width:100%;
   max-height:100%;
 }
 

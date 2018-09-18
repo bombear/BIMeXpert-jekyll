@@ -97,7 +97,6 @@ ul {
 
   .dropdown{
     display: none;
-    
     flex-direction: column;
     position: absolute;
     top: 49px;
@@ -117,20 +116,26 @@ ul {
     border-bottom: 2px solid lightgrey;
     padding: 0;
     line-height: 30px;
+    
 }
 
 .dropdownElement > a:hover{
     font-weight: bold;
-    border-bottom: 3px solid #ffb42a66;
+    letter-spacing: -1px;
     font-family: Josefinsemibold;
+    text-decoration: underline;
+    text-decoration-color:#ffb42a66;
+    border: none;
 }
 
 .dropdownElement > a{
+    letter-spacing: 1px;
   font-size: 15px;
   border-bottom: none;
   font-family: Josefin;
-  margin: 0 10px 0 25px;
+  padding: 0 10px 0 25px;
   display: block;
+  color: black;
 }
 
 .fadeOut{
@@ -246,7 +251,7 @@ ul {
       justify-content: space-around;
   }
 
-  #languages > .flag{
+  #languages img{
     width: 30px;
     height: auto;
     opacity: 0.5;
@@ -255,7 +260,7 @@ ul {
     border-bottom: 3px solid  white;
   }
 
-  #languages > .flag:hover{
+  #languages img:hover{
     border-top: 3px solid  #ffb42a66;
     border-bottom: 3px solid  #ffb42a66;
   }

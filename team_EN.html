@@ -1,0 +1,23 @@
+---
+title: BIMeXpert | Team
+layout: default_EN
+lang: en
+---
+
+<div id=ourTeam>
+  <div id="allMembers">
+    <h2>Our team</h2>
+    <div class=memberRow id=topRow>
+        <div class=spacer></div>
+        {% for member in site.data.team_1 %}
+          {% include member_block.html %}
+        {% endfor %}
+        <div class=spacer></div>
+      </div>
+      <div class=memberRow id=secondRow>
+        {% for member in site.data.team_2 %}
+          {% include member_block.html %}
+        {% endfor %}    
+      </div>
+  </div>
+</div>
