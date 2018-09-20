@@ -21,7 +21,7 @@ a {
 }
   #header.sticky{
       opacity: 0.7;
-      top: -34px;
+      top: -32px;
   }
 
   nav{
@@ -151,7 +151,7 @@ ul {
 
 
 
-  @media screen and (max-width:1600px) {
+@media screen and (max-width:1600px) {
     .li{ padding:0 12px 0 50px;}
 }
 @media screen and (max-width:1024px) {
@@ -286,4 +286,32 @@ ul {
         opacity: 0;
         display: none;
     }
+}
+
+
+@media only screen and (max-width : 1000px) {
+
+
+	header {
+		position: absolute;
+	}
+
+	#mainNavigation {
+		display:block;
+	}
+
+nav a{
+    float: left;
+}
+nav #mainMenu{
+    float: right;
+    border: 10px solid black;
+}
+
+#mainMenu > li{
+    display: none;
+}
+
+#mainMenu:hover + li{
+    display: flex;
 }

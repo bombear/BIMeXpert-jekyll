@@ -223,7 +223,7 @@ header{
   background-color: rgb(255, 255, 255, 0);
 }
 
-@-webkit-keyframes logoFade {
+/*@-webkit-keyframes logoFade {
   0% {
       opacity: 1;
   }
@@ -231,7 +231,7 @@ header{
   100% {
       opacity: 0;
   }
-}
+}*/
 
 .noDisplay{
   display: none;
