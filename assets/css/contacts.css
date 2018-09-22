@@ -7,7 +7,7 @@
   border-bottom: 3px solid #cecece;
 }
 
-.info{
+#info{
   display: flex;
   flex-direction: row;
   justify-content:center;
@@ -21,7 +21,7 @@
   font-weight: bold;
 }
 
-.billing{
+#billing{
   display: flex;
   flex-direction: row;
   justify-content:center;
@@ -72,3 +72,14 @@ margin: 0;
 #contactAddress{
   font-size: 21px;
 }
+
+@media only screen and (max-width : 460px) {
+  #info, #billing{
+    flex-direction: column;
+  }
+
+  .infoElement{
+    width:100%;
+  }
+}
+

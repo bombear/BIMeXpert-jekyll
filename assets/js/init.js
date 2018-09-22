@@ -166,3 +166,16 @@ function serviceLoader() {
   window.onhashchange = locationHashChanged;
   window.setTimeout(locationHashChanged, 1);
 }
+
+/*--------------------*/
+
+function showMenu() {
+  if($('#mainMenu').css('display') === 'flex')
+{
+    $('#mainMenu').css("display", "none");
+}
+else
+{
+  $('#mainMenu').css("display", "flex");
+}
+}

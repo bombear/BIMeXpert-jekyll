@@ -38,10 +38,7 @@ body{
 }
 
 
-#header {
-  width: 100%;
-  max-width: 1320px;
-}
+
 
 #footer {
   width: 100%;
@@ -62,6 +59,17 @@ body{
 @media screen and (max-width:800px) {
   body{
     align-items: flex-start;
+  }
+}
+
+@media screen and (max-width:460px) {
+  body{
+    align-items: flex-start;
+  }
+
+  #content{
+    min-width: 0;
+    width: 100%;
   }
 }
 
