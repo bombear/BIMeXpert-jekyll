@@ -48,9 +48,9 @@ a {
 
   #menuIcon > div {
     width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+    height: 4px;
+    background-color: #f4c141;
+    margin: 7px 0;
   }
 
 
@@ -373,6 +373,12 @@ nav #mainMenu{
         width: 100%;
     }
 
+    #languages{
+        top: 3px;
+        left: 125px;
+        right: auto;
+
+    }
 
 
 
