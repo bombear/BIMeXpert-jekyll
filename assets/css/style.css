@@ -21,9 +21,6 @@
 
 
 html{
-  height: 100%;
-  /*display: flex;
-  flex-direction: column;*/
 }
 
 body{
@@ -42,7 +39,6 @@ body{
 
 
 #header {
-  /*position: fixed;*/
   width: 100%;
   max-width: 1320px;
 }
@@ -63,6 +59,11 @@ body{
  position: relative;
 }
 
+@media screen and (max-width:800px) {
+  body{
+    align-items: flex-start;
+  }
+}
 
 #architect {
   display: block;

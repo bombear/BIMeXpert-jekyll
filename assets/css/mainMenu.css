@@ -289,7 +289,7 @@ ul {
 }
 
 
-@media only screen and (max-width : 1000px) {
+/*@media only screen and (max-width : 1000px) {
 
 
 	header {
@@ -314,4 +314,4 @@ nav #mainMenu{
 
 #mainMenu:hover + li{
     display: flex;
-}
+}*/
