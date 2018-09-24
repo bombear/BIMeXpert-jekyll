@@ -55,6 +55,7 @@
   align-items: top;
   justify-content: top;
   flex-wrap: nowrap;
+  background-color: #f2f2f2;
 }
 
 #serviceshort .serviceshortinner {
@@ -134,8 +135,7 @@
   margin-bottom: 10px;
 }
 
-ul.listy {
-  list-style-type: circle;
+ul.sectionList{
   text-align: justify;
   display: list-item;
   font-size: 20px;
@@ -143,13 +143,91 @@ ul.listy {
   color: rgb(0, 0, 0);
   text-align: justify;
   margin-bottom: 1em;
-
 }
 
-ul.sublisty {
-  list-style-type: square;
+ul.sectionList > li{
+  list-style-type: circle;
 }
 
+
+.starterimagecontainer {
+  display: flex;
+  background-image: url(/siteImages/starterpromowhitetopnologo.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 40vw;
+  max-height: 600px;
+  width: 100%;
+}
+
+.starterimagecontainer .content {
+  display: flex;
+  flex-flow: row;
+  flex-grow:1;
+  justify-content: flex-start;
+  background-image: url(/siteImages/whitebackground.png);
+  background-size: 100% 100%;
+  height: 70%;
+  max-height: 250px;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.starterimagecontainer .content .message {
+  display: flex;
+  flex-flow: column;
+  height: 80%;
+  justify-content: space-between;
+  align-items: left;
+  opacity: 0.8;
+}
+
+.starterimagecontainer .content .message .messageline {
+  display: flex;
+  flex-flow: row;
+  padding-left: 3vw;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.starterimagecontainer .content .message .messageline .image {
+  align-items: left;
+  width: 60px;
+  height: 55px;
+}
+
+.starterimagecontainer .content .message .messageline .image >img {
+  height: 90%;
+  width: auto;
+  padding-right: 10%;
+}
+
+.starterimagecontainer .logo > img {
+  height: 20vw;
+  max-height: 360px;
+}
+
+.starterimagetext {
+  font-family: Josefinsemibold;
+  font-size: 24px;
+  line-height: 1.35;
+  opacity: 0.8;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-align: LEFT;
+  z-index: 500;
+  flex-grow: 1;
+}
+
+
+
+.starterimagecontainer .logo{
+  display:flex;
+  flex-flow:row;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
 
 .index-wrapper {
   display: flex;
@@ -161,16 +239,14 @@ ul.sublisty {
   background-color: rgba(240,240,240);
 }
 
-.serviceMenuItem
 .index-wrapper .index-menuu {
   /*box-shadow: 0 0 2px 2px #d0d0d0;*/
   z-index: 0;
   background-color: rgba(240,240,240);
-  color: rgba(220,220,220);
   padding: 0.5em;
-  height: 3vh;
+  /*height: 3vh;*/
   align-items: center;
-  opacity: 0.4;
+  opacity: 1;
 }
 .index-wrapper .index-main {
   display: flex;
@@ -200,7 +276,7 @@ ul.sublisty {
   background-position: center;
   background-size: cover;
   transition: all .5s ease-in-out;
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 .serviceMenuItem:hover, .serviceMenuItem:active{
@@ -230,45 +306,48 @@ ul.sublisty {
 }
 
 .starterText{
-  background: rgba(255, 255, 255, 0.6)
+  background: rgba(255, 255, 255, 0)
 }
 
 .starterText > h2{
   font-family: 'Flamalight';
-  font-size: 24px;
+  font-size: 16px;
   color: rgb(19, 19, 19, 0.8);
   text-align: center;
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .starterText > h4{
+  /*background: rgba(255,255,255,0.6);*/
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
   font-family: 'Flamalight';
   font-size: 24px;
   color: rgb(19, 19, 19, 0.8);
   text-align: center;
   margin: 0;
-  font-weight: 500;
+  font-weight: 3;
 }
 
 #serviceMenuInvestor{
-  background-image: url(/images/PIXINO-investor.jpg);
+  background-image: url(/siteImages/PIXINO-investor.jpg);
 }
 
 #serviceMenuDesigner{
-  background-image: url(/images/designer.jpg);
+  background-image: url(/siteImages/designer.jpg);
 }
 
 #serviceMenuArchitect{
-  background-image: url(/images/architecture.jpg);
+  background-image: url(/siteImages/architecture.jpg);
 }
 
 #serviceMenuManufacturer{
-  background-image: url(/images/manufacturer.jpg);
+  background-image: url(/siteImages/manufacturer.jpg);
 }
 
 #serviceMenuTeam{
-  background-image: url(/images/team.jpg);
+  background-image: url(/siteImages/team.jpg);
 }
 
 @media only screen and (max-width : 460px) {
@@ -280,6 +359,7 @@ ul.sublisty {
 
   .serviceContainer{
     width: 100%;
+    margin-top: 10px;
   }
 
   .sectionContainer{
@@ -295,5 +375,26 @@ ul.sublisty {
   .perspective > img{
     width: 10vw;
     margin-left: 2vw;
+  }
+
+  .index-wrapper{
+    height: 55vh;
+  }
+
+  .starterimagecontainer .content > img {
+    height: 32px;
+    padding-right: 10%;
+  }
+
+  .sectionText, ul.sectionList, .sectionTextTitle {
+    font-size: 14px;
+  }
+
+  .sectionContainer > h6{
+    font-size: 18px;
+  }
+
+  .sectionContainer > ul{
+    padding-left: 10px;
   }
 }

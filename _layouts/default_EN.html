@@ -16,14 +16,14 @@
     <script src="/assets/js/jquery-3.3.1.js"></script>
     <script src="/assets/js/init.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126169138-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126169138-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-126169138-1');
-</script>
+        gtag('config', 'UA-126169138-1');
+    </script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
         <nav id="mainNavigation">
 
             <a href="index.html">
-                <img id="logo" src="/images/logo_ferde_k.png" alt="BIMeXpert LOGO">
+                <img id="logo" src="/siteImages/logo_ferde_k.png" alt="BIMeXpert LOGO">
             </a>
             <div class="spacer"></div>
             <div id="menuIcon" onclick="showMenu()">
@@ -41,12 +41,12 @@
             </div>
             <ul id="mainMenu">
                 <li><a href="/BIM_EN.html" onclick="">
-                        <img src="/images/raise-your-hand-to-ask.png" id="smallimage" alt="" />
+                        <div><img src="/siteImages/raise-your-hand-to-ask.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">What is BIM?</h3>
                     </a>
                 </li>
                 <li id=services><a href="/services_EN.html" onclick="">
-                        <img src="/images/gears.png" id="smallimage" alt="" />
+                        <div><img src="/siteImages/gears.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">Services</h3>
                     </a>
                     <ul id="servicesDropDown" class="dropdown">
@@ -54,20 +54,20 @@
                             <a href="/services_EN.html#Designers" class="HU">For Designers</a>
                         </li>
                         <li class="dropdownElement">
-                            <a  href="/services_EN.html#Manufacturers" class="HU">For Manufacturers</a>
+                            <a href="/services_EN.html#Manufacturers" class="HU">For Manufacturers</a>
                         </li>
                         <li class="dropdownElement">
-                            <a  href="/services_EN.html#Applicants" class="HU">For Applicants</a>
+                            <a href="/services_EN.html#Applicants" class="HU">For Applicants</a>
                         </li>
                     </ul>
                 </li>
                 <li><a href="/team_EN.html" onclick="">
-                        <img src="/images/team.png" id="smallimage" alt="" />
+                        <div><img src="/siteImages/team.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">Team</h3>
                     </a>
                 </li>
                 <li><a href="/contacts_EN.html" onclick="">
-                        <img src="/images/phone.png" id="smallimage" alt="" />
+                        <div><img src="/siteImages/phone.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">Contacts</h3>
                     </a>
                 </li>
@@ -75,13 +75,13 @@
                 </li>
             </ul>
             <div id="languages">
-                <a href="index.html"><img src="/images/flag_HUN.png" class="flag" id="flagHU" alt="HU" /></a>
-                <a href="index_EN.html"><img src="/images/flag_EN.png" class="flag" id="flagEN" alt="EN" /></a>
+                <a href="index.html"><img src="/siteImages/flag_HUN.png" class="flag" id="flagHU" alt="HU" /></a>
+                <a href="index_EN.html"><img src="/siteImages/flag_EN.png" class="flag" id="flagEN" alt="EN" /></a>
             </div>
         </nav>
     </header>
     <div id="content">
-    {{ content }}
+        {{ content }}
     </div>
 
     <footer id="footer">

@@ -40,11 +40,3 @@
 #X{
   color: #ffb42a;
 }
-
-@media only screen and (max-width : 460px) {
-
-  #footer{
-      min-width: 0;
-      width: 100%;
-  }
-}

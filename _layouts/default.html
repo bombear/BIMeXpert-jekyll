@@ -16,22 +16,21 @@
     <script src="/assets/js/jquery-3.3.1.js"></script>
     <script src="/assets/js/init.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126169138-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126169138-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-126169138-1');
-</script>
+        gtag('config', 'UA-126169138-1');
+    </script>
 </head>
 
 <body>
     <header id="header">
         <nav id="mainNavigation">
-
             <a href="index.html">
-                <img id="logo" src="/images/logo_ferde_k.png" alt="BIMeXpert LOGO">
+                <img id="logo" src="/siteImages/logo_ferde_k.png" alt="BIMeXpert LOGO">
             </a>
             <div class="spacer"></div>
             <div id="menuIcon" onclick="showMenu()">
@@ -39,41 +38,42 @@
                 <div></div>
                 <div></div>
             </div>
+            <div id="menuBackground" onclick="hideMenu()"></div>
             <ul id="mainMenu">
                 <li><a href="/BIM.html" onclick="">
-                        <img src="/images/raise-your-hand-to-ask.png" id="smallimage" alt="" />
+                        <div><img src="/siteImages/raise-your-hand-to-ask.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">Mi a BIM?</h3>
                     </a>
                 </li>
                 <li id=services><a href="/services.html" onclick="">
-                        <img src="/images/gears.png" id="smallimage" alt="" />
+                        <div><img src="/siteImages/gears.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">szolgáltatások</h3>
                     </a>
                     <ul id="servicesDropDown" class="dropdown">
                         <li class="dropdownElement">
-                            <a href="/services.html#Investors" class="HU">Beruházóknak</a>
+                            <a name="Investors" href="/services.html#Investors" class="HU">Beruházóknak</a>
                         </li>
                         <li class="dropdownElement">
-                            <a href="/services.html#Designers" class="HU">Tervezőknek</a>
+                            <a name="Designers" href="/services.html#Designers" class="HU">Tervezőknek</a>
                         </li>
                         <li class="dropdownElement">
-                            <a href="/services.html#Architects" class="HU">Generáltervezőknek</a>
+                            <a name="Architects" href="/services.html#Architects" class="HU">Generáltervezőknek</a>
                         </li>
                         <li class="dropdownElement">
-                            <a href="/services.html#Manufacturers" class="HU">Gyártóknak</a>
+                            <a name="Manufacturers" href="/services.html#Manufacturers" class="HU">Gyártóknak</a>
                         </li>
                         <li class="dropdownElement">
-                            <a href="/services.html#Applicants" class="HU">Munkavállalóknak</a>
+                            <a name="Applicants" href="/services.html#Applicants" class="HU">Munkavállalóknak</a>
                         </li>
                     </ul>
                 </li>
                 <li><a href="/team.html" onclick="">
-                        <img src="/images/team.png" id="smallimage" alt="" />
+                        <div><img src="/siteImages/team.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">Csapatunk</h3>
                     </a>
                 </li>
                 <li><a href="/contacts.html" onclick="">
-                        <img src="/images/phone.png" id="smallimage" alt="" />
+                        <div> <img src="/siteImages/phone.png" id="smallimage" alt="" /></div>
                         <h3 class="HU">Kapcsolat</h3>
                     </a>
                 </li>
@@ -81,9 +81,9 @@
                 </li>
             </ul>
             <div id="languages">
-                <a href="/index.html"><img src="/images/flag_HUN.png" class="flag" id="flagHU" onclick="languageHU()"
+                <a href="/index.html"><img src="/siteImages/flag_HUN.png" class="flag" id="flagHU" onclick="languageHU()"
                         alt="HU" /></a>
-                <a href="/index_EN.html"><img src="/images/flag_EN.png" class="flag" id="flagEN" onclick="languageEN()"
+                <a href="/index_EN.html"><img src="/siteImages/flag_EN.png" class="flag" id="flagEN" onclick="languageEN()"
                         alt="EN" /></a>
             </div>
         </nav>
@@ -99,5 +99,23 @@
         <p class="infoText" id="company">BIMe<span id="X">X</span>pert Kft.</p>
     </footer>
 </body>
+
+<svg height="0">
+    <filter id="f3">
+        <feConvolveMatrix filterRes="100 100" style="color-interpolation-filters:sRGB" order="3" kernelMatrix="0 -1 0   -1 4 -1   0 -1 0"
+            preserveAlpha="true" />
+    </filter>
+    <filter id="f4">
+        <feSpecularLighting surfaceScale="5" specularConstant="1" specularExponent="10" lighting-color="white">
+            <fePointLight x="-5000" y="-10000" z="20000" />
+        </feSpecularLighting>
+    </filter>
+    <filter id="f5">
+        <feColorMatrix values="1 -0.2 0 0 0
+                            0 1 0 -0.1 0
+                            0 1.2 1 0.1 0
+                             0 0 1.7 1 0">
+    </filter>
+</svg>
 
 </html>

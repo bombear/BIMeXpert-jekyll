@@ -1,5 +1,5 @@
 .header-site {
-    background: #000000 url(/images/barhigh.jpg) 100% 100% no-repeat;
+    background: #000000 url(/siteImages/barhigh.jpg) 100% 100% no-repeat;
 }
 
 a {
@@ -9,7 +9,7 @@ a {
     cursor: pointer;
 }
 
-  #header{
+#header{
     height:52px;
     width: 80vw;
     max-width: 1680px;
@@ -27,7 +27,7 @@ a {
   }
 
   nav{
-      background-image:url(/images/bar_thick_long.jpg);
+      background-image:url(/siteImages/bar_thick_long.jpg);
       background-repeat: no-repeat;
       height: 52px;
   }
@@ -37,20 +37,24 @@ a {
       flex-direction: row;
   }
 
+  #menuBackground{
+      display: none;
+  }
+
   #menuIcon{
     display: none;
     position: absolute;
     right: 0;
-    border: 1px solid lightgrey;
     padding: 0 2px 0 2px;
-    margin: 6px 6px 0 0;
+    margin: 14px 10px 0 0;
   }
 
   #menuIcon > div {
-    width: 35px;
+    width: 30px;
     height: 4px;
-    background-color: #f4c141;
-    margin: 7px 0;
+    background-color: #565656;
+    margin: 5px 0;
+    border-radius: 2px;
   }
 
 
@@ -155,7 +159,6 @@ ul {
   font-family: Josefin;
   padding: 0 10px 0 25px;
   display: block;
-  color: black;
 }
 
 .fadeOut{
@@ -195,7 +198,6 @@ ul {
       margin: 0;
       font-family: Josefin;
       font-size: 15px;
-      color: #3d3c3d;
       background-color: #ffffff00;
       font-weight: bold;
       border: none;
@@ -213,7 +215,7 @@ ul {
 
   li a{
       text-decoration: none;
-      
+      color: #3d3c3d;
   }
 
 
@@ -338,27 +340,63 @@ nav #mainMenu{
 
 @media only screen and (max-width : 460px) {
 
+    #menuBackground{
+        display: none;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 99;
+        background-color: #ffd260;
+        opacity: 0;
+    }
+
     #mainMenu{
         
         display: none;
         flex-direction: column;
-        align-content: center;
-        background-color: white;
-        border: 2px solid lightgrey;
+        align-items: center;
+        background-color: #606060;
         position: absolute;
         right: 0;
         top: 49px;
         border-radius: 3px;
+        overflow: auto;
+        box-shadow: #3d3c3d;
+        height: calc(100vh - 79px);
+        z-index: 100;
+        
     }
 
     #mainMenu > li{
+        width: 100%;
        display: block;
        position: static;
-       border-bottom: 1px solid lightgrey;
-       margin: auto;
-       margin-left: auto;
-       margin-right: auto;
+       border-bottom: 1px solid #686868;
+       padding-top: 10px;
+       height: auto;
+       -webkit-overflow-scrolling: touch;
+       background-image: linear-gradient(#606060,#424242);
     }
+
+    #mainMenu > li:active, #mainMenu > li:hover{
+       background-image: linear-gradient(#424242,#2e2e2e);
+    }
+
+    #mainMenu > li a{
+       display: flex;
+       flex-direction: row;
+       padding-bottom: 4px;
+    }
+
+    #mainMenu > li a img{
+       height: 2.5vh;
+       width: auto;
+       filter:url(/index.html/#f5);
+     }
+
+     #mainMenu > li a > div{
+        width: 11vw;
+     }
 
     #mainMenu > li:last-child{
         border-bottom: none;
@@ -368,16 +406,35 @@ nav #mainMenu{
         display: block;
     }
 
-    #header{
-        min-width: 0;
-        width: 100%;
-    }
-
     #languages{
         top: 3px;
         left: 125px;
         right: auto;
 
+    }
+
+    .dropdown{
+        display: block;
+        position: static;
+        box-shadow: none;
+        background-color: #3f3f3f;
+      }
+
+      .dropdown li {
+          background-color: inherit;
+          border-bottom: 1px solid #565656;
+      }
+
+      .dropdown li:last-child{
+          border-bottom: none;
+      }
+
+      #mainMenu a{
+        color: #e8e8e8
+    }
+
+    .dropdown a {
+        color: #dddddd;
     }
 
 

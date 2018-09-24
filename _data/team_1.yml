@@ -1,6 +1,6 @@
 - first_name: Tamás
   last_name: Orosz
-  img: /images/team/tamas.png
+  img: /siteImages/team/tamas.png
   title:
     hu: Ügyvezető, tulajdonos
     en: CEO, Owner
@@ -9,7 +9,7 @@
 
 - first_name: Péter
   last_name: Orosz
-  img: /images/team/peter.png
+  img: /siteImages/team/peter.png
   title:
     hu: Ügyvezető, tulajdonos
     en: CEO, Owner

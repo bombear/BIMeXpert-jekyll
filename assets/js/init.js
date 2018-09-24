@@ -177,5 +177,28 @@ function showMenu() {
 else
 {
   $('#mainMenu').css("display", "flex");
+  $('#menuBackground').css("display", "block");
 }
 }
+
+function hideMenu() {
+  $('#mainMenu').css("display", "none");
+  $('#menuBackground').css("display", "none");
+}
+
+/*export function hideOnClickOutside() {
+  const outsideClickListener = (event) => {
+    if (!$(event.target).closest("#mainMenu").length) {
+      if ($("#mainMenu").is(':visible')) {
+        $("#mainMenu").hide()
+        removeClickListener()
+      }
+    }
+  }
+
+  const removeClickListener = () => {
+    document.removeEventListener('click', outsideClickListener)
+  }
+
+  document.addEventListener('click', outsideClickListener)
+}*/
