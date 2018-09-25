@@ -1,0 +1,115 @@
+#header
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.12)
+    transition: top 0.4s ease-in-out
+    z-index: 10
+    border-bottom: 6px solid $mainColor
+    position: fixed
+    top: 0
+    #mainNavigation
+        background-image: url(/siteImages/bar_thick_long.jpg)
+        background-repeat: no-repeat
+        height: inherit
+        display: flex
+        flex-direction: row
+        position: relative
+        a
+            cursor: pointer
+        #logo
+            height: inherit
+            width: 84px
+            padding-left: 30px
+            left: 20px
+            transition: all 0.4s ease
+            &:hover
+                padding-left: 40px
+        #mainMenu
+            display: flex
+            flex-direction: row
+            align-items: flex-end
+            margin: 0
+            padding: 0
+            li
+                list-style-type: none
+                background-color: #ffffff
+                padding: 0 12px 0 1.2vw
+                display: grid
+                flex-direction: row
+                align-items: stretch
+                height: inherit
+                white-space: nowrap
+                #smallimage
+                    display: block
+                    margin: auto
+                    height: 28px
+                    width: auto
+                    opacity: 0.18
+                a
+                    text-decoration: none
+                    color: #3d3c3d
+                    &:hover, &focus, &active
+                        outline: 0
+                        font-size: $biggerFont
+                        border-bottom: 3px solid $mainColor
+                        border-radius: 1.5px
+
+                h3
+                    margin: 0
+                    font-family: $mainFont
+                    font-size: $biggerFont
+                    background-color: #ffffff
+                    font-weight: bold
+                    border: none
+                    border-bottom: 3px solid rgba(255, 255, 255, 0)
+                    border-radius: 1.5px
+                    text-transform: uppercase
+                    padding: 0
+                    text-align: center
+                .dropdown
+                    display: none
+                    flex-direction: column
+                    position: absolute
+                    top: $headerHeight
+                    border-radius: 3px
+                    box-shadow: 3px 0 #888888
+                    padding: 0
+                    font-family: $mainFont
+                    li
+                        height: 30px
+                        background-color: white
+                        border-bottom: 2px solid lightgrey
+                        pading: 0
+                        line-height: 30px
+                        a
+                            letter-spacing: 1px
+                            font-size: $menuFont
+                            border-bottom: none
+                            padding: 0 10px 0 25px
+                            font-family: $mainFont
+                            display: block
+                            &:hover
+                                font-weight: bold
+                                letter-spacing: -1px
+                                font-family: $mainFont
+                                text-decoration: underline
+                                tect-decoration-color:  $mainColor
+                                border: none
+                &:hover
+                    .dropdown
+                        display: flex
+        #languages
+            position: absolute
+            right: -30px
+            display: flex
+            flex-direction: column
+            height: inherit
+            justify-content: space-around
+            img
+                width: 30px
+                height: auto
+                opacity: 0.5
+                cursor: pointer
+                border-top: 3px solid white
+                border-bottom: 3px solid white
+                &:hover
+                    border-top: 3px solid $mainColor
+                    border-bottom: 3px solid $mainColor

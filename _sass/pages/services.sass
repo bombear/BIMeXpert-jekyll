@@ -1,0 +1,176 @@
+@import "helpers/variables"
+
+.index-wrapper
+    display: flex
+    flex-flow: column
+    height: 25vh
+    padding: 0 10px 10px 10px
+    background-color: rgb(240, 240, 240)
+    .index-menuu
+        z-index: 0
+        background-color: rgb(240, 240, 240)
+        padding: 0.5em
+        align-items: center
+        opacity: 1
+        .starterText
+            h2
+                font-family: $secondaryFont
+                font-size: $biggerFont
+                color: rgba(19, 19, 19, 0.8)
+                text-align: center
+                margin: 0
+                font-weight: 400
+    .index-main
+        display: flex
+        background: white
+        flex-direction: row
+        flex: 1 1
+        flex-flow: row wrap
+        border-width: 1px 0 0 1px
+        border-style: solid
+        border-color: rgb(240, 240, 240)
+        .index-square
+            flex-grow: 1
+            flex-shrink: 1
+            min-width: 250px
+            display: flex
+            flex-flow: column
+            overflow: hidden
+            border-width: 0 1px 1px 0
+            border-style: solid
+            border-color: rgb(240, 240, 240)
+            .serviceMenuItem
+                background-position: center
+                backgorund-size: cover
+                transition: all .5s ease-in-out
+                opacity: 0.75
+                flex: 1
+                width: inherit
+                height: inherit
+                display: flex
+                flex-flow: column
+                justify-content: center
+                align-items: center
+                text-decoration: none
+                &:hover, &active
+                    opacity: 1
+                    transform: scale(1.1)
+                div
+                    width: 100%
+                    height: 30px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    h4
+                        background: rgba(255, 255, 255, 0.6)
+                        width: inherit
+                        font-family: $secondaryFont
+                        font-size: $bigFont
+                        color: rgba(19, 19, 19, 0.8)
+                        text-align: center
+                        margin: 0
+                        font-weight: 3
+            #serviceMenuInvestor
+                background-image: url(/siteImages/PIXINO-investor.jpg)
+            #serviceMenuDesigner
+                background-image: url(/siteImages/designer.jpg)
+            #serviceMenuArchitect
+                background-image: url(/siteImages/architecture.jpg)
+            #serviceMenuManufacturer
+                background-image: url(/siteImages/manufacturer.jpg)
+            #serviceMenuTeam
+                background-image: url(/siteImages/team.jpg)
+
+.serviceContainer
+    display: none
+    margin-top: 74px
+    margin-bottom: 48px
+    flex-grow: 1
+    width: $DTWidth
+    .perspective
+        display: flex
+        flex-direction: row
+        width: 60vw
+        @include center
+        max-width: 1500px
+        min-width: 600px
+        align-items: center
+        justify-content: center
+        img
+            margin: 0
+            display: block
+            width: 120px
+            height: auto
+            opacity: 0.2
+            padding-top: 30px
+        .sectionContainer
+            margin-left: 5vw
+            margin-right: auto
+            padding-top: 0px
+            padding-bottom: 10px
+            font-family: $mainFont
+            font-size: $bigFont
+            color: rgb(0, 0, 0)
+            h6
+                text-align: center
+                margin: 0
+                margin-top: 10px
+            .sectionText
+                text-align: justify
+                z-index: -1
+                flex-grow: 1
+            .sectionTextTitle
+                font-weight: 600
+                text-align: justify
+                z-index: -1
+                flex-grow: 1
+                margin-bottom: 10px
+            .sectionList
+                text-align: justify
+                display: list-item
+                font-weight: 600
+                text-align: justify
+                margin-bottom: 1em
+                li
+                    list-style-type: circle
+#indexBottomInfo
+    font-family: $mainFont
+    font-size: $bigFont
+    font-weight: 600
+    color: rgb(19, 19, 19)
+    #introduction
+        @include center
+        padding-top: 0
+        padding-bottom: 10px
+        width: 90%
+        z-index: -1
+    #serviceshort
+        display: flex
+        flex-direction: row
+        width: 60vw
+        @include center
+        max-width: 1500px
+        min-width: 600px
+        align-items: top
+        justify-content: top
+        flex-wrap: nowrap
+        .serviceshortinner
+            display: flex
+            flex-direction: column 
+            @include center
+            align-items: top
+            justify-content: top
+            img
+                @include center
+                max-width: 200px
+                min-width: 80px
+                opacity: 0.22
+            .sectionText
+                text-align: justify
+                z-index: -1
+                flex-grow: 1
+
+
+
+
+
