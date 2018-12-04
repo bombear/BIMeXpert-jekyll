@@ -28,6 +28,7 @@ $(function () {
 });
 
 
+
 function atmeretezes() {
 
   if (window.pageYOffset > 10) {

@@ -1,6 +1,6 @@
 - first_name: Flóra
   last_name: Orosz
-  img: /siteImages/team/flora.png
+  img: /siteImages/team/flora.jpg
   title:
     hu: Irodavezető
     en: Office coordinator
@@ -18,7 +18,7 @@
 
 - first_name: Máté
   last_name: Magyar
-  img: /siteImages/team/mate.png
+  img: /siteImages/team/mate.jpg
   title:
     hu: Épületgépész mérnök
     en: HVAC and Plumbing engineer

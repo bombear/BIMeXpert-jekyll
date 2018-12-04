@@ -19,3 +19,10 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+
+languages: ["hu", "en",]
+exclude_from_localizations: ["assets", "CNAME", "siteImages"]
+defaultLang: hu
+languageNames:
+  hu: Magyar
+  en: English

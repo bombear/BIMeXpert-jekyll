@@ -1,0 +1,20 @@
+global:
+  name: BIMeXpert
+  tagline: BIM
+  descripiton:
+  keywords:
+
+pages:
+  main: Főoldal
+  about: rolunk
+
+menu:
+  bim: Mi a BIM?
+  services: Szolgáltatások
+  forInvestors: Beruházóknak
+  forDesigners: Tervezőknek
+  forArchitects: Generáltervezőknek
+  forManufacturers: Gyártóknak
+  forApplicants: Munkavállalóknak
+  team: Csapatunk
+  contact: Kapcsolat

@@ -1,0 +1,67 @@
+<nav id="mainNavigation">
+    <a href="index.html">
+        <img id="logo" src="/siteImages/logo_ferde_k.png" alt="BIMeXpert LOGO">
+    </a>
+    
+
+
+
+
+
+
+
+    <div class="spacer"></div>
+    <div id="menuIcon" onclick="showMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="menuBackground" onclick="hideMenu()"></div>
+    <ul id="mainMenu">
+        <li><a href="/BIM.html" onclick="">
+                <div><img src="/siteImages/raise-your-hand-to-ask.png" id="smallimage" alt="" /></div>
+                <h3>{% t menu.bim %}</h3>
+            </a>
+        </li>
+        <li id=services><a href="/services.html" onclick="">
+                <div><img src="/siteImages/gears.png" id="smallimage" alt="" /></div>
+                <h3>{% t menu.services %}</h3>
+            </a>
+            <ul id="servicesDropDown" class="dropdown">
+                <li class="dropdownElement">
+                    <a name="Investors" href="/services.html#Investors">{% t menu.forInvestors %}</a>
+                </li>
+                <li class="dropdownElement">
+                    <a name="Designers" href="/services.html#Designers">{% t menu.forDesigners %}</a>
+                </li>
+                <li class="dropdownElement">
+                    <a name="Architects" href="/services.html#Architects">{% t menu.forArchitects %}</a>
+                </li>
+                <li class="dropdownElement">
+                    <a name="Manufacturers" href="/services.html#Manufacturers">{% t menu.forManufacturers %}</a>
+                </li>
+                <li class="dropdownElement">
+                    <a name="Applicants" href="/services.html#Applicants">{% t menu.forApplicants %}</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/team.html" onclick="">
+                <div><img src="/siteImages/team.png" id="smallimage" alt="" /></div>
+                <h3>{% t menu.team %}</h3>
+            </a>
+        </li>
+        <li><a href="/contacts.html" onclick="">
+                <div> <img src="/siteImages/phone.png" id="smallimage" alt="" /></div>
+                <h3>{% t menu.contact %}</h3>
+            </a>
+        </li>
+
+        </li>
+    </ul>
+    <div id="languages">
+        <a href="{{ site.baseurl_root }}/index_t.html"><img src="/siteImages/flag_HUN.png" class="flag" id="flagHU" onclick="languageHU()"
+                alt="HU" /></a>
+        <a href="{{ site.baseurl_root }}/{{ site.languages[1] }}/index_t.html"><img src="/siteImages/flag_EN.png" class="flag" id="flagEN" onclick="languageEN()"
+                alt="EN" /></a>
+    </div>
+</nav>

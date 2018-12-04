@@ -1,0 +1,20 @@
+global: 
+  name: BIMeXpert
+  tagline: BIM
+  description:
+  keywords:
+
+pages:
+  main: Main
+  about: about_us
+
+menu:
+  bim: What is BIM?
+  services: Services
+  forInvestors: For Investors
+  forDesigners: For Designers
+  forArchitects: For Architects
+  forManufacturers: For Manufacturers
+  forApplicants: For Applicants
+  team: Team
+  contact: Contacts

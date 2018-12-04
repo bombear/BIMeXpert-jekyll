@@ -1,0 +1,14 @@
+<div class="member">
+    <img class="IDIMG" src="{{ member.img }}" alt="">
+    {% if page.lang == 'hu' %}
+    <h5>{{ member.last_name }} {{ member.first_name }}</h5>
+    {% endif %}
+    {% if page.lang == 'en' %}
+    <h5>{{ member.first_name }} {{ member.last_name }}</h5>
+    {% endif %}
+    <p> {{ member.title[page.lang] }}</br>&#9743:
+        <script> document.write('{{ member.phone | slice: 0, 5 }}' + '{{ member.phone | slice: 5, 20 }}'); </script>
+        </br> &#128387:
+        <script> document.write('{{ member.email }}' + '&#64' + 'bimexpert.hu'); </script>
+    </p>
+</div>

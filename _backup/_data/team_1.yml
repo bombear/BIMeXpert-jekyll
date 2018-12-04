@@ -1,0 +1,17 @@
+- first_name: Tamás
+  last_name: Orosz
+  img: /siteImages/team/tamas.jpg
+  title:
+    hu: Ügyvezető, tulajdonos
+    en: CEO, Owner
+  email: orosztamas
+  phone: "+36706029845"
+
+- first_name: Péter
+  last_name: Orosz
+  img: /siteImages/team/peter.jpg
+  title:
+    hu: Ügyvezető, tulajdonos
+    en: CEO, Owner
+  email: oroszpeter
+  phone: "+36202640321"

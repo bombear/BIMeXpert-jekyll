@@ -1,0 +1,45 @@
+- first_name: Flóra
+  last_name: Orosz
+  img: /siteImages/team/flora.jpg
+  title:
+    hu: Irodavezető
+    en: Office coordinator
+  email: oroszflora
+  phone: "+36306468318"
+
+- first_name: Gergely
+  last_name: Dudás
+  img: /siteImages/team/gergo.jpg
+  title:
+    hu: Épületgépész mérnök
+    en: HVAC and Plumbing engineer
+  email: dudasgergely
+  phone: "+36307292157"
+
+- first_name: Máté
+  last_name: Magyar
+  img: /siteImages/team/mate.jpg
+  title:
+    hu: Épületgépész mérnök
+    en: HVAC and Plumbing engineer
+  email: magyarmate
+  phone: "+36302930552"
+
+# - first_name:
+#   last_name:
+#   img:
+#   title:
+#   email:
+#   phone: 
+# - first_name:
+#   last_name:
+#   img:
+#   title:
+#   email:
+#   phone: 
+# - first_name:
+#   last_name:
+#   img:
+#   title:
+#   email:
+#   phone: 
